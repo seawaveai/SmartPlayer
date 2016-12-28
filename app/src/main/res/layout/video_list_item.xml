@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <!--视频图标-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/video_default_icon"/>
+
+    <!--  //文件名和文件时长 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/video_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文件名"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/video_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文件时长"
+            android:textColor="@color/halfwhite"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <!-- //文件大小  -->
+    <TextView
+        android:id="@+id/video_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:text="文件大小"
+        android:textColor="@color/halfwhite"
+        android:textSize="14sp"/>
+</LinearLayout>
